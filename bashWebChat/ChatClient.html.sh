@@ -32,7 +32,7 @@
      <div style="white-space: nowrap">
             <div style="display:inline-block"><img src="/img_lei.png" alt="Avatar" height="40" width="40"><%$name%></div>
 	  <%fi%>
-          <input name="usermsg" type="text" id="usermsg" size="50" style="display:inline-block"/>
+          <input name="usermsg" type="text" id="usermsg" size="50" style="display:inline-block" onkeypress="return runScript(event)"/>
           <button class="w3-button w3-green" onclick="onSendMessage('<%$sex%>', '<%$name%>')" style="display:inline-block"/>Send</button>
           <button class="w3-button w3-red" onclick="window.location.assign('/')" style="display:inline-block">Close</button>
      </div>
@@ -40,6 +40,16 @@
 
 </div>
 </div>
-
+<script>
+function runScript(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode === 13) {
+        //var tb = document.getElementById("scriptBox");
+        //eval(tb.value);
+        onSendMessage('<%$sex%>', '<%$name%>');
+        return false;
+    }
+}
+</script>
   </body>
 </html>
