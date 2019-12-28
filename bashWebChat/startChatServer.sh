@@ -1,7 +1,7 @@
 #!/bin/bash
-
+cd /bashWebChat
 #start the webserver
-sudo /home/matteo/dev/simpleWebServer/startWebServer.sh &
+/simpleWebServer/startWebServer.sh &
 PIDs=$!
 
 function openPipe { exec 3>$1; } # apre pipe passata per argomento
