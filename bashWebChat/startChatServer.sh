@@ -1,7 +1,9 @@
 #!/bin/bash
 cd /bashWebChat
+wdir=$(pwd)
+wdir=${wdir::-12}
 #start the webserver
-/simpleWebServer/startWebServer.sh &
+$wdir/simpleWebServer/startWebServer.sh &
 PIDs=$!
 
 function openPipe { exec 3>$1; } # apre pipe passata per argomento
