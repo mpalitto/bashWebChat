@@ -12,8 +12,7 @@ Insert your name and press the picture that best rappresent you
 ![image](https://user-images.githubusercontent.com/7433768/71541875-92380c00-295f-11ea-9ef4-aa542d2ccb8e.png)
 
 **he** gets **her** text
-![image](https://user-images.githubusercontent.com/7433768/71541813-f0182400-295e-11ea-82bb-4f809cd516ad.png)
-
+![image](https://user-images.githubusercontent.com/7433768/71541994-1a6ae100-2961-11ea-828f-0251438f54c2.png)
 ## Installation for Linux
 There are 2 options **Dockerized** and **Vanilla**
 ### Dockerized installation
