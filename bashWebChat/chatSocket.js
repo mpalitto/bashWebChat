@@ -5,7 +5,7 @@
 var connection;
 function onEntry(sex, name){
     // Create a new connection
-    connection = new WebSocket("ws://localhost:8080/chat");
+    connection = new WebSocket("ws://"+location.host+":8080/chat");
     // set onopen WebSocket action to send the login name to the Server
     connection.onopen = function (e){ connection.send("newUser "+sex+"::"+name); };
 
