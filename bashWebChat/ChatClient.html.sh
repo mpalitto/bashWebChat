@@ -3,8 +3,8 @@
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>CHAT</title>
-      <link rel="stylesheet" type="text/css" href="http://localhost/w3.css">
-      <script type="text/javascript" src="/chatSocket.js"></script>
+      <link rel="stylesheet" type="text/css" href="w3.css">
+      <script type="text/javascript" src="chatSocket.js"></script>
   </head>
 
   <body onload="onEntry('<%$sex%>', '<%$name%>')">
